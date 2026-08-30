@@ -1,0 +1,314 @@
+/* ============================================================
+   PÁGINA PRINCIPAL
+   Ocupa toda la pantalla y centra el formulario.
+   ============================================================ */
+
+.registro-pedido-page {
+    min-height: 100vh;
+
+    /* Fondo claro y sencillo */
+    background: #f1f5f9;
+
+    /* Centrar el formulario */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Espacio en celulares */
+    padding: 20px;
+
+    /* Fuente general */
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Permite que el contenido no se salga */
+    box-sizing: border-box;
+}
+
+
+/* ============================================================
+   TARJETA DEL FORMULARIO
+   ============================================================ */
+
+.registro-pedido {
+    width: 100%;
+    max-width: 520px;
+
+    /* Fondo blanco para que todo sea visible */
+    background: #ffffff;
+
+    padding: 30px;
+
+    /* Borde sencillo */
+    border: 1px solid #d1d5db;
+
+    border-radius: 12px;
+
+    /* Sombra ligera */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+
+    box-sizing: border-box;
+}
+
+
+/* ============================================================
+   ENCABEZADO
+   ============================================================ */
+
+.registro-pedido-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+/* Icono */
+.registro-pedido-header .icono {
+    display: block;
+
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Título */
+.registro-pedido-header h2 {
+    margin: 0 0 8px;
+
+    color: #111827;
+
+    font-size: 28px;
+
+    font-weight: 700;
+}
+
+
+/* Descripción */
+.registro-pedido-header p {
+    margin: 0;
+
+    color: #6b7280;
+
+    font-size: 15px;
+}
+
+
+/* ============================================================
+   CAMPOS DEL FORMULARIO
+   ============================================================ */
+
+.campo {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    margin-bottom: 18px;
+}
+
+
+/* Etiquetas */
+.campo label {
+    color: #111827;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+/* ============================================================
+   INPUTS Y SELECT
+   ============================================================ */
+
+.campo input,
+.campo select {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 12px;
+
+    /* Fondo blanco */
+    background: #ffffff;
+
+    /* Borde visible */
+    border: 1px solid #9ca3af;
+
+    border-radius: 8px;
+
+    /* IMPORTANTE:
+       El texto que escriba el usuario será negro */
+    color: #111827;
+
+    font-size: 16px;
+
+    /* Evita estilos predeterminados extra */
+    outline: none;
+}
+
+
+/* Texto del placeholder */
+.campo input::placeholder {
+    color: #9ca3af;
+}
+
+
+/* Opciones del select */
+.campo select option {
+    color: #111827;
+
+    background: #ffffff;
+}
+
+
+/* ============================================================
+   INPUT SELECCIONADO
+   ============================================================ */
+
+.campo input:focus,
+.campo select:focus {
+    border-color: #2563eb;
+
+    /* Resalta el campo seleccionado */
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+
+/* ============================================================
+   BOTÓN
+   ============================================================ */
+
+.btn-validar {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    /* Color del botón */
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: background 0.2s;
+}
+
+
+/* Cuando pasamos el mouse */
+.btn-validar:hover {
+    background: #1d4ed8;
+}
+
+
+/* Cuando hacemos clic */
+.btn-validar:active {
+    background: #1e40af;
+}
+
+
+/* ============================================================
+   RESULTADO GENERAL
+   ============================================================ */
+
+.resultado-pedido {
+    margin-top: 20px;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+}
+
+
+/* ============================================================
+   PEDIDO VÁLIDO
+   ============================================================ */
+
+.resultado-exitoso {
+    background: #dcfce7;
+
+    border: 1px solid #86efac;
+
+    color: #166534;
+}
+
+
+/* ============================================================
+   PEDIDO INVÁLIDO
+   ============================================================ */
+
+.resultado-error {
+    background: #fee2e2;
+
+    border: 1px solid #fca5a5;
+
+    color: #991b1b;
+}
+
+
+/* ============================================================
+   LISTA DE ERRORES
+   ============================================================ */
+
+.lista-errores {
+    margin-top: 10px;
+
+    padding-left: 20px;
+}
+
+
+/* Espacio entre errores */
+.lista-errores li {
+    margin-bottom: 5px;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+   Adaptación para celulares.
+   ============================================================ */
+
+@media (max-width: 600px) {
+
+    .registro-pedido-page {
+        padding: 12px;
+    }
+
+    .registro-pedido {
+        padding: 20px;
+
+        border-radius: 10px;
+    }
+
+    .registro-pedido-header h2 {
+        font-size: 23px;
+    }
+
+    .registro-pedido-header .icono {
+        font-size: 34px;
+    }
+
+    .campo input,
+    .campo select {
+        font-size: 16px;
+
+        /* Tamaño cómodo para tocar en celular */
+        min-height: 44px;
+    }
+
+    .btn-validar {
+        min-height: 46px;
+    }
+}
