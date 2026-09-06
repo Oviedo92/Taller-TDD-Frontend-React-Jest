@@ -7,19 +7,15 @@ El proyecto permite trabajar con **renderizado de componentes, manipulación e i
 ---
 
 <p align="center">
-  <img src="assets/captura-completa.png" width="700">
+  <img src="assets/captura-completa.png" width="700" alt="Evidencia del proyecto">
 </p>
 
 <p align="center">
-  <img src="assets/form.png" width="700">
+  <img src="assets/form.png" width="700" alt="Formulario de registro">
 </p>
 
 <p align="center">
-  <img src="assets/succes-forms.png" width="700">
-</p>
-
-<p align="center">
-  <img src="assets/terminal-code.png" width="700">
+  <img src="assets/terminal-code.png" width="700" alt="Terminal y código">
 </p>
 
 <p align="center">
