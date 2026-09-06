@@ -1,10 +1,10 @@
 import './App.css'
-import PedidoForm from './components/PedidoForm'
+import RegistroPedido from './components/RegistroPedido'
 
 function App() {
   return (
     <>
-      <PedidoForm />
+      <RegistroPedido  />
     </>
   )
 }
