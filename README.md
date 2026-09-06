@@ -7,7 +7,7 @@ El proyecto permite trabajar con **renderizado de componentes, manipulación e i
 ---
 
 <p align="center">
-  <img src="assets/1) captura completa.png" width="700">
+  <img src="assets/captura-completa.png" width="700">
 </p>
 
 <p align="center">
@@ -15,11 +15,11 @@ El proyecto permite trabajar con **renderizado de componentes, manipulación e i
 </p>
 
 <p align="center">
-  <img src="assets/3) succes forms.png" width="700">
+  <img src="assets/succes-forms.png" width="700">
 </p>
 
 <p align="center">
-  <img src="assets/4) terminal & code.png" width="700">
+  <img src="assets/terminal-code.png" width="700">
 </p>
 
 <p align="center">
